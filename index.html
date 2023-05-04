@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        *{
+            margin :0;
+            padding :0;
+           
+        }
+        .dropdown{
+            display : flex;
+            justify-content : center;
+            margin-top:100px;
+            list-style-type :none;
+        }
+        a{
+            display : block;
+            width : 200px;
+            background-color : black;
+            color : red;
+            padding : 10px 0;
+            font-size : 1.2em;
+            text-decoration : none;
+            text-align : center;
+
+        }
+        a:hover{
+            background-color :skyblue ;
+
+        }
+        .product{
+             list-style-type :none;
+             display:none;
+        }
+        .dropdown li:hover .product{
+            display:block; 
+        }
+        .book{
+            list-style-type :none;
+            transform :translateX(200px) translateY(-40px);
+            position :absolute;
+            display :none;
+        }
+        .product li:hover .book{
+            display:block;
+        }
+    </style> 
+</head>
+<body>
+ <div class="container">
+     <ul class=" dropdown">
+         <li> <a href="#"> HOME</a></li>
+         <li> <a href="#"> CARS</a>
+              <ul class="cars">
+                  <li><a href="#"> tata</a></li>
+                  <li><a href="#"> hyunduai</a></li>
+                  <li><a href="#"> mahindra</a></li>
+                  <li><a href="#"> suzuki</a>
+                  <ul class="model">
+                      <li><a href="#"> harrier</a></li>
+                      <li><a href="#"> i20</a></li>
+                      <li><a href="#"> thar</a></li>
+                      <li><a href="#"> brezza</a></li>
+                  </ul></li>
+              </ul></li>
+         <li> <a href="#"> SERVICES</a></li>
+         <li> <a hre
+                 f="#"> CONTACT</a></li>
+         <li> <a href="#"> HELP</a></li>
+     </ul>
+ </div>
+</body>
+</html>
